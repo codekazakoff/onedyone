@@ -238,7 +238,7 @@ section .row {
     margin: 0 auto;
   }
   .col_left .col_6_text h1 {
-    font-size: 3.8rem;
+    font-size: 3.4rem;
     line-height: 78px;
     font-weight: bold;
   }
@@ -271,6 +271,16 @@ section .row {
   }
 }
 @media screen and (max-width: 566px) {
+  .col_left .col_6_text h1 {
+    font-size: 2.8rem;
+    line-height: 46px;
+    font-weight: bold;
+  }
+  .col_left .col_6_text p {
+    font-size: 14px;
+    line-height: 20px;
+    /* padding-right: 44px; */
+  }
   .header_round_box {
     width: 50px;
     height: 50px;
@@ -284,5 +294,17 @@ section .row {
   }
   .header_mentor p {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 472px) {
+  .col_left .col_6_text h1 {
+    font-size: 2.2rem;
+    line-height: 38px;
+    font-weight: bold;
+  }
+  .col_left .col_6_text p {
+    font-size: 12px;
+    line-height: 20px;
+    padding-right: 20px;
   }
 }
