@@ -261,6 +261,9 @@ section .row {
     left: 16%;
     top: 40%;
   }
+  .chart span {
+    font-size: 11px;
+  }
   .header_mentor {
     width: 248px;
     height: 38px;
@@ -270,9 +273,9 @@ section .row {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 566px) {
+@media screen and (max-width: 568px) {
   .col_left .col_6_text h1 {
-    font-size: 2.8rem;
+    font-size: 2.1rem;
     line-height: 46px;
     font-weight: bold;
   }
@@ -295,33 +298,101 @@ section .row {
   .header_mentor p {
     font-size: 12px;
   }
+  .chart span {
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 472px) {
   .col_left .col_6_text h1 {
-    font-size: 1.7rem;
+    font-size: 1.65rem;
     line-height: 38px;
     font-weight: bold;
   }
   .col_left .col_6_text p {
     font-size: 12px;
-    line-height: 20px;
+    line-height: 28px;
     padding-right: 20px;
+  }
+  .header_round_box {
+    width: 35px;
+    height: 35px;
+    left: 12%;
+    top: 40%;
+  }
+  .header_mentor {
+    width: 200px;
+    height: 28px;
+    left: 2%;
+  }
+  .chart span {
+    font-size: 8px;
+  }
+  .header_mentor p {
+    font-size: 10px;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
   .col_left .col_6_text h1 {
     font-size: 1.4rem;
     line-height: 28px;
     font-weight: bold;
   }
   .col_left .col_6_text p {
-    font-size: 12px;
-    line-height: 14px;
-    padding-right: 22px;
+    font-size: 10px;
+    line-height: 20px;
+    padding-right: 26px;
   }
   .col_left .col_6_text .d_flex a {
     padding: 11px 24px;
     font-size: 13px;
+  }
+  .header_mentor {
+    width: 160px;
+    height: 24px;
+    left: 2%;
+  }
+  .header_round_box {
+    width: 32px;
+    height: 32px;
+  }
+  .header_mentor p {
+    font-size: 7px;
+  }
+  .chart span {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .col_left .col_6_text h1 {
+    font-size: 1rem;
+    line-height: 22px;
+  }
+  .col_left .col_6_text p {
+    font-size: 6px;
+    line-height: 18px;
+    padding-right: 28px;
+  }
+  .chart span {
+    font-size: 6px;
+  }
+  .col_left .col_6_text .d_flex a {
+    padding: 6px 18px;
+    font-size: 6px;
+  }
+  .header_mentor {
+    width: 120px;
+    height: 16px;
+    left: 2%;
+  }
+  .header_mentor p {
+    font-size: 5px;
+  }
+  .chart span {
+    font-size: 5px;
+  }
+  .header_round_box {
+    width: 26px;
+    height: 26px;
   }
 }
