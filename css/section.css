@@ -191,7 +191,7 @@ section .row {
     width: 95%;
   }
   .col_left .col_6_text h1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     line-height: 42px;
     font-weight: bold;
   }
@@ -223,7 +223,7 @@ section .row {
   }
 }
 
-@media screen and (max-width: 798px) {
+@media screen and (max-width: 769px) {
   .col_md_6 {
     width: 100%;
     display: flex !important;
@@ -238,8 +238,8 @@ section .row {
     margin: 0 auto;
   }
   .col_left .col_6_text h1 {
-    font-size: 3.4rem;
-    line-height: 78px;
+    font-size: 2.6rem;
+    line-height: 58px;
     font-weight: bold;
   }
   .col_left .col_6_text p {
@@ -298,7 +298,7 @@ section .row {
 }
 @media screen and (max-width: 472px) {
   .col_left .col_6_text h1 {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     line-height: 38px;
     font-weight: bold;
   }
@@ -306,5 +306,22 @@ section .row {
     font-size: 12px;
     line-height: 20px;
     padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .col_left .col_6_text h1 {
+    font-size: 1.4rem;
+    line-height: 28px;
+    font-weight: bold;
+  }
+  .col_left .col_6_text p {
+    font-size: 12px;
+    line-height: 14px;
+    padding-right: 22px;
+  }
+  .col_left .col_6_text .d_flex a {
+    padding: 11px 24px;
+    font-size: 13px;
   }
 }
