@@ -110,17 +110,6 @@ header {
             cursor: pointer;
         }
     }
-    &_modal{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        // background : $header-background;
-        z-index: 50;
-        transition: all 200ms ease-in-out;
-        display: none;
-    }
 }
 
 

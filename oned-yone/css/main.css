@@ -34,61 +34,73 @@ html {
 
 .col-1 {
   width: 8.3333333333%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-2 {
   width: 16.6666666667%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-3 {
   width: 25%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-4 {
   width: 33.3333333333%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-5 {
   width: 41.6666666667%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-6 {
   width: 50%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-7 {
   width: 58.3333333333%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-8 {
   width: 66.6666666667%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-9 {
   width: 75%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-10 {
   width: 83.3333333333%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-11 {
   width: 91.6666666667%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-12 {
   width: 100%;
+  position: relative;
   padding: 0 15px;
 }
 
@@ -412,61 +424,73 @@ html {
 
 .col-1 {
   width: 8.3333333333%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-2 {
   width: 16.6666666667%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-3 {
   width: 25%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-4 {
   width: 33.3333333333%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-5 {
   width: 41.6666666667%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-6 {
   width: 50%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-7 {
   width: 58.3333333333%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-8 {
   width: 66.6666666667%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-9 {
   width: 75%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-10 {
   width: 83.3333333333%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-11 {
   width: 91.6666666667%;
+  position: relative;
   padding: 0 15px;
 }
 
 .col-12 {
   width: 100%;
+  position: relative;
   padding: 0 15px;
 }
 
@@ -895,16 +919,6 @@ header {
   font-size: 28px;
   cursor: pointer;
 }
-.nav_modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 50;
-  transition: all 200ms ease-in-out;
-  display: none;
-}
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -927,6 +941,15 @@ header {
   .container {
     margin: 0 15px !important;
   }
+}
+.home {
+  border: 1px solid red;
+}
+.home_container {
+  max-width: 1320px;
+  width: 100%;
+  padding: 0 15.5px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */

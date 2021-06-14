@@ -1,0 +1,11 @@
+.home{
+    border: 1px solid red;
+
+    &_container{
+        max-width: 1320px;
+        width:100%;
+        padding : 0 15.5px;
+        margin: 0 auto;
+        // overflow: hidden;
+    }
+}
