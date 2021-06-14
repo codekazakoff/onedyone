@@ -1,6 +1,9 @@
 @import './includes/_code';
 @import './includes/_grid';
+@import './pages/nav';
+@import './pages/home';
+@import './pages/class';
+@import './pages/about';
+@import './pages/pricing';
+@import './pages/blog';
 
-.btn{
-    @include btn(lg);
-}

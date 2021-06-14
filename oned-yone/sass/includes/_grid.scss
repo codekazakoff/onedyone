@@ -1,12 +1,11 @@
 .container{
     width:100%;
     padding: 0 16px;
-    margin: 0 auto;
+    // margin: 0 auto;
+    // max-width: 1200px;
 }
 .row{
     display: flex;
-    justify-content : space-between;
-    align-items : center;
     flex-wrap: wrap;
     margin : 0 -15px;
 }
@@ -24,6 +23,44 @@
     max-width: 100%;
     position : relative;
 }
+  .j-c-center{
+    justify-content: center;
+  }
+  .j-c-between {
+    justify-content: space-between;
+  }
+  
+  .j-c-around {
+    justify-content: space-around;
+  }
+  
+  .j-c-unset {
+    justify-content: unset;
+  }
+  
+  .a-i-center {
+    align-items: center;
+  }
+  
+  .a-i-unset {
+    align-items: unset;
+  }
+  
+  .f-d-column {
+    flex-direction: column;
+  }
+  
+  .f-d-unset {
+    flex-direction: unset;
+  }
+  
+  .d-none {
+    display: none;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
 @mixin d_flex($display_type, $justify_type, $align_type){
     display: $display_type;
     justify-content: $justify_type;
