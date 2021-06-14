@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-style: normal;
+}
+
+:root{
+    --font-family-Poppins : "Poppins", sans-serif;
+    --font-family-Playfair-d : "Playfair Display",serif;
+    --font-weight-Medium : 500;
+    --white-gl : white;
+}
+html{
+    font-size: 16px;
+}
+
+$font-family-Poppins : var(--font-family-Poppins);
+$font-family-Playfair-d : var(--font-family-Playfair-d);
+$font-weight-Medium : var(--font-weight-Medium);
+$white-gl : var(--font-white-gl);
+
+*{
+    font-family: $font-family-Poppins;
+}

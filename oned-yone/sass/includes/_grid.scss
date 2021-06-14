@@ -1,0 +1,102 @@
+.container{
+    width:100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content : space-between;
+    align-items : center;
+    flex-wrap: wrap;
+    margin : 0 -15px;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+      width: #{100% / 12 * $i};
+      padding : 0 15px;
+    }
+  }
+
+.col-auto{
+    flex : 0 0 auto;
+    width : auto;
+    max-width: 100%;
+    position : relative;
+}
+@mixin d_flex($display_type, $justify_type, $align_type){
+    display: $display_type;
+    justify-content: $justify_type;
+    align-items: $align_type;
+}
+
+@mixin btn($type){
+    display : inline-block;
+    background : transparent;
+    color : #FF5722;
+    border-radius : 4px;
+    outline : none;
+    border: 1px solid #ff5722;
+    text-decoration: none;
+    @if($type==sm){
+        padding : 8px 16px;
+        font-size: 12px;
+    }
+    @if($type==md){
+        padding : 12px 24px;
+        font-size: 14px;
+    }
+    @if($type==lg){
+        padding : 15px 32px;
+        font-size: 16px;
+    }
+    @if($type==xl){
+        padding : 18px 38px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+    @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+          width: #{100% / 12 * $i};
+          padding : 0 15px;
+        }
+    }   
+}
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+          width: #{100% / 12 * $i};
+          padding : 0 15px;
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+          width: #{100% / 12 * $i};
+          padding : 0 15px;
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+    @for $i from 1 through 12 {
+        .col-xl-#{$i} {
+          width: #{100% / 12 * $i};
+          padding : 0 15px;
+        }
+    }
+}
