@@ -1,3 +1,10 @@
+$color-a : #04004D;
+@mixin fontSize($size, $weight, $height,$color-link) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: $color-link;
+}
 .home{
     border: 1px solid red;
 
@@ -6,6 +13,15 @@
         width:100%;
         padding : 0 15.5px;
         margin: 0 auto;
-        // overflow: hidden;
+        overflow: hidden;
+    }
+    &_home_start{
+        margin: 0 auto;
+        h1{
+            @include fontSize(2.2rem, 3rem, bold, $color-a);
+            text-align: center;
+            margin-top: 100px;
+            color: red;
+        }
     }
 }

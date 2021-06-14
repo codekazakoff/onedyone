@@ -24,6 +24,8 @@ html {
 .container {
   width: 100%;
   padding: 0 16px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .row {
@@ -414,6 +416,8 @@ html {
 .container {
   width: 100%;
   padding: 0 16px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .row {
@@ -950,6 +954,19 @@ header {
   width: 100%;
   padding: 0 15.5px;
   margin: 0 auto;
+  overflow: hidden;
+}
+.home_home_start {
+  margin: 0 auto;
+}
+.home_home_start h1 {
+  font-size: 2.2rem;
+  font-weight: 3rem;
+  line-height: bold;
+  color: #04004D;
+  text-align: center;
+  margin-top: 100px;
+  color: red;
 }
 
 /*# sourceMappingURL=main.css.map */
