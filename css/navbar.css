@@ -214,7 +214,7 @@ nav .nav_menu {
   }
   .auth_links a:first-child {
     margin-left: 0;
-    width: 128px;
+    width: 126px;
     display: flex;
     justify-content: center;
     border-color: #ff5722 !important;
@@ -222,5 +222,8 @@ nav .nav_menu {
   }
   .auth_links a:last-child {
     margin: 7.5px 0 8px 0;
+  }
+  .section_mt_5 {
+    margin-top: 392px;
   }
 }
