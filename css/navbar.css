@@ -98,7 +98,7 @@ nav .nav_menu {
   background-color: transparent;
 }
 .animation:hover::before {
-  transform: translate(0, -43px);
+  transform: translate(0, -44px);
   transition: 0.6s all;
   background-color: #ff5722;
 }

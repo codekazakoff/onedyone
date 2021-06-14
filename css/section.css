@@ -219,7 +219,7 @@ section .row {
     height: 30px;
   }
   .header_mentor p {
-    font-size: 9px;
+    font-size: 8px;
   }
 }
 
@@ -270,7 +270,7 @@ section .row {
     left: 2%;
   }
   .header_mentor p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 568px) {
@@ -369,8 +369,8 @@ section .row {
     line-height: 22px;
   }
   .col_left .col_6_text p {
-    font-size: 6px;
-    line-height: 18px;
+    font-size: 10px !important;
+    line-height: 15px;
     padding-right: 28px;
   }
   .chart span {
