@@ -1,6 +1,5 @@
 @import '../includes/grid';
-$header-background: linear-gradient(106.24deg, #EEE0CA -1.25%, #F9F3EA 96.26%);
-$color-a : #04004D;
+@import '_virable';
 @mixin fontSize($size, $weight, $height,$color-link) {
     font-size: $size;
     font-weight: $weight;
