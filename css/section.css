@@ -1,6 +1,7 @@
-section {
-  /* border: 1px solid #ff5722; */
+* {
+  font-family: "Poppins", sans-serif;
 }
+
 section .row {
   display: flex;
   justify-content: space-between;
@@ -140,7 +141,124 @@ section .row {
   position: relative;
   width: 100%;
 }
-
+.section_02 {
+  width: 100%;
+}
+.section_02 .section_mask {
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 50px auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section_col_4 {
+  margin: 15px auto;
+  width: 152px;
+}
+.section_03 {
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 0 auto;
+  text-align: center;
+}
+.section_03 .section_title {
+  padding-top: 100px;
+}
+.section_title h1 {
+  color: #04004d;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 32px;
+}
+.section_title p {
+  color: #848199;
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: normal;
+  max-width: 428px;
+  margin: 8px auto 42px auto;
+}
+.section_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.section_card {
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 15px auto;
+  transition: all 600ms ease-in-out;
+}
+.section_card:hover {
+  transition: 0.4s ease-in-out;
+  background: #ff5722;
+  transform: translateY(-42px);
+  box-shadow: 0px 42px 34px rgba(255, 87, 34, 0.24);
+}
+.section_card:hover .sec_title p {
+  color: #fff !important;
+}
+.section_card:hover .sec_title h3 {
+  color: #fff !important;
+}
+.section_card:hover .icon {
+  background: rgba(255, 255, 255, 0.15);
+}
+.section_card .icon {
+  width: 57px;
+  height: 57px;
+  margin: 0 auto;
+  margin-top: 28px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 600ms ease-in-out;
+}
+.section_card .icon .icon_round {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ff5722;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section_card_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: all 600ms ease-in-out;
+}
+.section_card .sec_title h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 14px;
+  font-style: normal;
+  margin-top: 24px;
+  color: #262626;
+  transition: all 600ms ease-in-out;
+}
+.section_card .sec_title p {
+  max-width: 196px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 14px;
+  color: #4d4d4d;
+  transition: all 600ms ease-in-out;
+}
 @media screen and (max-width: 1245px) {
   .row {
     margin-top: 50px !important;

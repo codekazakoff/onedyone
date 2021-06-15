@@ -57,7 +57,7 @@ nav .nav_menu {
 .nav_menu .auth_links a {
   color: #04004d;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   font-style: normal;
   line-height: 16px;
@@ -70,12 +70,12 @@ nav .nav_menu {
 }
 .animation {
   position: relative;
-  transition: 0.6s all linear;
   border-bottom: 4px solid transparent;
   padding-bottom: 10px;
 }
 .animation:hover {
-  font-size: 16.5px !important;
+  font-weight: 600 !important;
+  transition: 0;
 }
 .animation::before {
   content: "";
@@ -94,7 +94,7 @@ nav .nav_menu {
   left: 44%;
   width: 8px;
   height: 8px;
-  border-radius: 50%;
+  border-radius: 50600%;
   background-color: transparent;
 }
 .animation:hover::before {
