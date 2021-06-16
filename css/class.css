@@ -229,12 +229,15 @@ section#class {
   display: inline-block;
 }
 @media screen and (max-width: 1150px) {
-  .class_card {
+  .card_auto {
     margin: 20px auto !important;
   }
 }
 
 @media screen and (max-width: 795px) {
+  .class_card {
+    margin: 20px auto;
+  }
   .class_header {
     justify-content: center !important;
   }
