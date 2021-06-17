@@ -145,8 +145,7 @@ section .row {
   width: 100%;
 }
 .section_02 .section_mask {
-  max-width: 1200px;
-  padding: 0 25px;
+  max-width: 1070px;
   margin: 50px auto;
   width: 100%;
   display: flex;
@@ -155,12 +154,19 @@ section .row {
   flex-wrap: wrap;
 }
 .section_col_4 {
-  margin: 15px auto;
-  width: 152px;
+  margin: 15px 35px;
+  max-width: 152px;
+  text-align: center;
+}
+.section_col_4:first-child {
+  margin-left: 0 !important;
+}
+.section_col_4:nth-child(5) {
+  margin-right: 0 !important;
 }
 .section_03 {
-  max-width: 1200px;
-  padding: 0 25px;
+  max-width: 980px;
+  padding: 0 15px;
   margin: 0 auto;
   text-align: center;
 }
@@ -194,8 +200,14 @@ section .row {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin: 15px auto;
+  margin: 15px 12px;
   transition: all 600ms ease-in-out;
+}
+.section_card:first-child {
+  margin-left: 0;
+}
+.section_card:last-child {
+  margin-right: 0;
 }
 .section_card:hover {
   transition: 0.4s ease-in-out;
@@ -301,6 +313,18 @@ section .row {
   }
 }
 
+@media screen and (max-width: 1045px) {
+  .section_02 .section_mask {
+    justify-content: center !important;
+  }
+  .section_col_4:first-child {
+    margin-left: 35px !important;
+  }
+  .section_col_4:nth-child(5) {
+    margin-right: 35px !important;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .row {
     flex-wrap: wrap !important;
@@ -340,7 +364,11 @@ section .row {
     font-size: 8px;
   }
 }
-
+@media screen and (max-width: 980px) {
+  .section_cards {
+    justify-content: center !important;
+  }
+}
 @media screen and (max-width: 769px) {
   .col_md_6 {
     width: 100%;
@@ -514,32 +542,9 @@ section .row {
     height: 26px;
   }
 }
-@media (min-width: 800px) and (max-width: 1100px) {
-  .section_02 .section_mask .section_col_4 img {
-    width: 80%;
-  }
-}
 
-@media (min-width: 658px) and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   .section_02 .section_mask .section_col_4 img {
     width: 80%;
-  }
-}
-@media (min-width: 506px) and (max-width: 565px) {
-  .section_02 .section_mask .section_col_4 img {
-    width: 80%;
-  }
-}
-@media (min-width: 354px) and (max-width: 400px) {
-  .section_02 .section_mask .section_col_4 img {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 353px) {
-  .section_02 .section_mask .section_col_4 {
-    margin: 15px auto;
-  }
-  .section_02 .section_mask .section_col_4 img {
-    width: 100%;
   }
 }
