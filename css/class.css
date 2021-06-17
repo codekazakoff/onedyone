@@ -12,6 +12,7 @@ section#class {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  max-width: 1145px;
 }
 .class_header h1 {
   color: #04004d;
@@ -30,10 +31,10 @@ section#class {
 }
 .class_title p {
   max-width: 428px;
+  font-size: 14px;
   font-style: normal;
   color: #848199;
   line-height: 24px;
-  font-size: 14px;
   font-weight: 400;
 }
 .class_select {
@@ -250,11 +251,21 @@ section#class {
   .class_card_text .middle {
     max-width: 312px !important;
   }
+  .class_title,
+  .class_header {
+    max-width: 1090px !important;
+    margin: 0 auto !important;
+  }
 }
 @media screen and (max-width: 1124px) {
   .class_card,
   .class_card_img {
     max-width: 340px;
+  }
+  .class_title,
+  .class_header {
+    max-width: 1050px !important;
+    margin: 0 auto !important;
   }
 }
 @media screen and (max-width: 1095px) {
@@ -262,11 +273,21 @@ section#class {
   .class_card_img {
     max-width: 320px;
   }
+  .class_title,
+  .class_header {
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+  }
 }
 @media screen and (max-width: 1034px) {
   .class_card,
   .class_card_img {
     max-width: 301.2px;
+  }
+  .class_title,
+  .class_header {
+    max-width: 935px !important;
+    margin: 0 auto !important;
   }
 }
 @media screen and (max-width: 977px) {
@@ -274,11 +295,31 @@ section#class {
   .class_card_img {
     max-width: 361px;
   }
+  .class_title,
+  .class_header {
+    max-width: 740px !important;
+    margin: 0 auto !important;
+  }
 }
 @media screen and (max-width: 786px) {
   .class_card,
   .class_card_img {
     max-width: 321px;
+  }
+  .class_title,
+  .class_header {
+    max-width: 650px !important;
+    margin: 0 auto !important;
+  }
+  .class_header h1 {
+    font-size: 24px;
+  }
+  .class_title p {
+    max-width: 358px !important;
+    font-size: 14px;
+  }
+  .class_title .btn-danger {
+    padding: 8px 12px;
   }
 }
 @media screen and (max-width: 706px) {
@@ -286,36 +327,33 @@ section#class {
   .class_card_img {
     max-width: 301px;
   }
+  .class_title,
+  .class_header {
+    max-width: 605px !important;
+    margin: 0 auto !important;
+  }
 }
 @media screen and (max-width: 665px) {
   .class_card,
   .class_card_img {
     max-width: 361px;
   }
-}
-@media screen and (max-width: 795px) {
-  .class_header {
+  .class_select {
     justify-content: center !important;
   }
+  .class_title,
   .class_header h1 {
-    font-size: 28px;
-  }
-  .class_title {
-    justify-content: center !important;
-    flex-wrap: wrap !important;
-    display: block !important;
+    font-size: 30px !important;
+    display: block;
+    margin: 0 auto !important;
   }
   .class_title p {
     display: block !important;
+    margin: 16px auto !important;
     text-align: center;
-    max-width: 288px;
-    margin: 20px auto;
-  }
-  .class_title .class_select {
-    margin: 0 auto;
-    justify-content: center;
   }
 }
+
 @media screen and (max-width: 725px) {
   .class_card {
     width: 361px;
