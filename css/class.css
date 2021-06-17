@@ -232,14 +232,67 @@ section#class {
     justify-content: center !important;
   }
   .class_card {
-    margin: 15px 16px;
-    width: 340px;
+    margin: 15px 10px;
+    max-width: 350px;
+  }
+  .class_card:first-child {
+    margin-left: 0 !important;
+  }
+  .class_card:last-child {
+    margin-right: 0 !important;
   }
   .class_card_img {
-    width: 340px;
+    max-width: 350px;
+  }
+  .class_card_text h3 {
+    font-size: 16px;
+  }
+  .class_card_text .middle {
+    max-width: 312px !important;
   }
 }
-
+@media screen and (max-width: 1124px) {
+  .class_card,
+  .class_card_img {
+    max-width: 340px;
+  }
+}
+@media screen and (max-width: 1095px) {
+  .class_card,
+  .class_card_img {
+    max-width: 320px;
+  }
+}
+@media screen and (max-width: 1034px) {
+  .class_card,
+  .class_card_img {
+    max-width: 301.2px;
+  }
+}
+@media screen and (max-width: 977px) {
+  .class_card,
+  .class_card_img {
+    max-width: 361px;
+  }
+}
+@media screen and (max-width: 786px) {
+  .class_card,
+  .class_card_img {
+    max-width: 321px;
+  }
+}
+@media screen and (max-width: 706px) {
+  .class_card,
+  .class_card_img {
+    max-width: 301px;
+  }
+}
+@media screen and (max-width: 665px) {
+  .class_card,
+  .class_card_img {
+    max-width: 361px;
+  }
+}
 @media screen and (max-width: 795px) {
   .class_header {
     justify-content: center !important;
