@@ -3,10 +3,10 @@ section#class {
   margin: 140px auto 170px;
 }
 .class_links {
-  max-width: 1115px;
+  max-width: 1145px;
   margin: 0 auto;
   width: 100%;
-  border: 1px solid red;
+  padding: 0 17px;
 }
 .class_header {
   display: flex;
