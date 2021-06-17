@@ -2,13 +2,11 @@
   width: 100%;
   margin: 135px 0;
   padding: 0 100px 0 20px;
-  border: 1px solid blue;
 }
 .about {
   max-width: 1111px;
   margin: 0 auto;
   width: 100%;
-  border: 1px solid #ff5722;
 }
 .about_header {
   margin: 0 auto 28px auto;
@@ -161,7 +159,6 @@ iframe {
     max-width: 375px;
   }
   .about_title h1 {
-    margin-top: -15px;
     font-size: 22px;
     line-height: 30px;
   }
@@ -186,14 +183,12 @@ iframe {
     max-width: 325px;
   }
   .about_title h1 {
-    margin-top: -15px;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 26px;
   }
   .about_title p {
-    margin: 5px 0 10px 0;
-    line-height: 16px;
-    font-size: 13px !important;
+    margin: 10px 0;
+    line-height: 20px;
   }
   .about_youtube::before {
     width: 12px;
