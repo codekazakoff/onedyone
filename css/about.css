@@ -139,12 +139,10 @@ iframe {
   }
 }
 @media screen and (max-width: 642px) {
-  .section_05 {
-    padding: 0 !important;
-  }
   iframe {
     width: 425px;
     height: 279px;
+    margin-right: 0 !important;
   }
   .about_title {
     max-width: 423px;
@@ -155,9 +153,6 @@ iframe {
   }
 }
 @media screen and (max-width: 502px) {
-  .section_05 {
-    padding: 0 !important;
-  }
   iframe {
     width: 375px;
     height: 279px;
@@ -183,9 +178,6 @@ iframe {
 }
 
 @media screen and (max-width: 474px) {
-  .section_05 {
-    padding: 0 !important;
-  }
   iframe {
     width: 325px;
     height: 265px;
