@@ -543,8 +543,8 @@ section .row {
   }
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   .section_02 .section_mask .section_col_4 img {
     width: 80%;
   }
-}
+} */
