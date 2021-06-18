@@ -106,6 +106,7 @@ iframe {
   content: url("../img/right.svg");
   margin-left: 5px;
 }
+
 @media (min-width: 978px) and (max-width: 1183px) {
   iframe {
     width: 425px;
