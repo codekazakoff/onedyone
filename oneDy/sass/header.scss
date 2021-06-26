@@ -11,18 +11,15 @@
 .header {	
 	width: 100%;
 	background : $background;
-
 	&__nav {
 		top: 0;
 		left: 0;
 		width: 100%;
 		z-index: 555;
-		position : fixed;
 		min-height: 100px;
 		background : $background;
 		@include display(flex,center,center);
 	}
-
 	&__inner {
 		@include display(flex,space-between,center);
 	}
@@ -86,15 +83,14 @@
 	&__auth {
 		@include display(flex,space-between,center);
 	}
-
 	&__btn{
-		padding : 15px 32px;
 		color: $orange;
+		padding : 15px 32px;
+		display: inline-block;
 		border : 1px solid $orange;
 		border-radius: $borderRadius;
 		@include font(normal,16,16);
-	}
-	
+	}	
 	&__btn.btn-link {
 		width: 131.58px;
 		text-align: center;
@@ -108,9 +104,101 @@
 			transition : $transition;
 		}
 	}
-
 	&__home {
-		padding-top: 100px;
+		max-width: 1352px;
+		margin : 0 auto;
+		padding: 0 47px 0 41px;
+	}	
+	&__home-inner {
+		border: 1px solid;
+		padding-top: 88px;
+		@include display(flex,space-between,flex-start);
+		// flex-wrap: wrap;
+	}
+	&__home-content {
+		max-width: 546px;
+		border: 1px solid;
+		margin-top: 42px;
+	}
+	&__home-title {
+		color: $text-color;
+		font-family: "Playfair Display",serif;
+		@include font(bold,74,54);
+		span {
+			color: $orange;
+			font-family: "Playfair Display",serif;
+		}
+		font-size: calc(28px + (54px - 28px) * ((100vw-320px) / (768px - 320px)));
+	}
+	&__home-text {
+		padding: 20px 0px 0px 0px;
+		color: rgba(1, 0, 26, 0.75);
+		@include font(normal,24,14);
+	}
+	&__home-link {
+		padding-top: 28px;
+	}
+	&__home-btn{
+		margin-right: 25px;
+		color: $white;
+		background: $orange;
+	}
+	&__home-img {
+		position: relative;
+		max-width: 622px;
+		border: 1px solid red;
+	}
+	&__woman-img  {
+		width: 100%;
+	}
+	&__woman-img img{
+		width: 100%;
+		border: 1px solid;
+	}
+	&__home-circle {
+		position: absolute;
+		top: 38%;
+		left: 31px;
+		width: 62px;
+		height: 62px;
+		border-radius: $borderRadius;
+		background-color: rgba(255, 255, 255, 0.9);
+		@include display(flex,center,center);
+
+		img{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		span {
+			width:48px;
+			height: 48px;
+			color : $white;
+			border-radius: 50%;
+			@include font(normal,14,13);
+			@include display(flex,center,center);
+			background-color:#383E56;
+		}
+	}
+	&__home-rectangle {
+		top: 65%;
+		left: -75px;
+		max-width: 248px;
+		padding: 12px 11px;
+		position : absolute;
+		background-color:$white;
+		border-radius: $borderRadius;
+		@include display(flex,center,center);
+		img{
+			width: 16px;
+			height : 16px;
+		}
+		span {
+			@include font(normal,14,13);
+			margin-left: 5px;
+		}
 	}
 }
 
@@ -124,8 +212,9 @@
 	.header {
 		background : $background;
 		&__nav {
-			width : 100%;
 			z-index: 5;
+			width : 100%;
+			position : fixed;
 		}
 		&__bars {
 			display: inline-block;
@@ -176,6 +265,12 @@
 			margin: 15px 0;
 			border-color: $orange;
 			color: $orange;
+		}
+		&__home {
+
+		}
+		&__home-title {
+			font-size: calc(28px + (54px - 28px) * ((100vw-320px) / (768px - 320px)));
 		}
 	}
 }
