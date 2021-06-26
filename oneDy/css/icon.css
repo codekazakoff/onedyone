@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('fonts/icons.eot?13kqj5');
+  src:  url('fonts/icons.eot?13kqj5#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?13kqj5') format('truetype'),
+    url('fonts/icons.woff?13kqj5') format('woff'),
+    url('fonts/icons.svg?13kqj5#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"], [class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-right:before {
+  content: "\e900";
+}
+._icon-person:before {
+  content: "\e901";
+  color: #4d4d4d;
+}
+._icon-Vector:before {
+  content: "\e902";
+  color: #fff;
+}
+._icon-Star-1:before {
+  content: "\e903";
+  color: #fea250;
+}
+._icon-card-3:before {
+  content: "\e904";
+  color: #fff;
+}
+._icon-card-1:before {
+  content: "\e905";
+  color: #fff;
+}
+._icon-card-2:before {
+  content: "\e906";
+  color: #fff;
+}
+._icon-logo-web .path1:before {
+  content: "\e907";
+  color: rgb(4, 0, 77);
+}
+._icon-logo-web .path2:before {
+  content: "\e908";
+  margin-left: -3.724609375em;
+  color: rgb(255, 87, 34);
+}
+._icon-logo-web .path3:before {
+  content: "\e909";
+  margin-left: -3.724609375em;
+  color: rgb(255, 87, 34);
+}
+._icon-logo-web .path4:before {
+  content: "\e90a";
+  margin-left: -3.724609375em;
+  color: rgb(255, 87, 34);
+}
+._icon-times:before {
+  content: "\e90b";
+}
+._icon-bars:before {
+  content: "\e90c";
+}
+._icon-truck:before {
+  content: "\e90d";
+}
+._icon-our-class-card_img_01:before {
+  content: "\e90e";
+}
+._icon-ellipse:before {
+  content: "\e90f";
+}
