@@ -8,7 +8,7 @@
 }
 
 
-.header {
+.header {	
 	width: 100%;
 	background : $background;
 
@@ -32,7 +32,7 @@
 		@include display(flex,flex-start,center);
 	}	
 
-	&__bars {
+	&__bars, &__times {
 		cursor: pointer;
 		display : none;
 	}
@@ -108,8 +108,15 @@
 			transition : $transition;
 		}
 	}
+
 	&__home {
 		padding-top: 100px;
+	}
+}
+
+@media (min-width: 992px) {
+	.header__times, .header__bars {
+		display: none !important;
 	}
 }
 
@@ -128,15 +135,19 @@
 			top: 0;
 			width: 100%;
 			z-index: -1;
-			display: none;
 			margin-left: 0px;
 			padding-top: 100px;
 			position: absolute;
 			flex-direction: column;
 			background : $background;
+			transform: translateY(-100%);
+			transition : all 400ms ease-in-out;
+		}
+		&__content.active {
+			transform: translateY(0);
+			transition : all 400ms ease-in-out;
 		}
 		&__menu {
-			padding-top: 15px;
 			flex-direction: column;
 			width: 100%;
 		}
@@ -159,7 +170,7 @@
 		}
 		&__auth {
 			flex-direction: column;
-			padding-bottom: 30px;
+			padding-bottom: 20px;
 		}
 		&__btn.btn-link {
 			margin: 15px 0;
@@ -167,5 +178,6 @@
 			color: $orange;
 		}
 	}
-
 }
+
+
