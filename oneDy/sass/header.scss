@@ -110,14 +110,12 @@
 		padding: 0 47px 0 41px;
 	}	
 	&__home-inner {
-		border: 1px solid;
 		padding-top: 88px;
 		@include display(flex,space-between,flex-start);
-		// flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
 	&__home-content {
 		max-width: 546px;
-		border: 1px solid;
 		margin-top: 42px;
 	}
 	&__home-title {
@@ -146,14 +144,12 @@
 	&__home-img {
 		position: relative;
 		max-width: 622px;
-		border: 1px solid red;
 	}
 	&__woman-img  {
 		width: 100%;
 	}
 	&__woman-img img{
 		width: 100%;
-		border: 1px solid;
 	}
 	&__home-circle {
 		position: absolute;
@@ -177,9 +173,9 @@
 			height: 48px;
 			color : $white;
 			border-radius: 50%;
+			background-color:#383E56;
 			@include font(normal,14,13);
 			@include display(flex,center,center);
-			background-color:#383E56;
 		}
 	}
 	&__home-rectangle {
