@@ -1,0 +1,121 @@
+@import '_grid';
+@import '_virable';
+
+.pricing {
+	padding : 100px 0 0 0;
+	&__container {
+		padding-left: 155px;
+		max-width: 100%;
+		padding-bottom: 50px;
+	}
+	&__header {
+		max-width:555px;
+	}
+	&__title {
+		letter-spacing: 2%;
+		color: $text-color;
+		@include font(700,32,32);
+		font-family: 'Playfair Display',serif;
+	}
+	&__text {
+		margin-top: 8px;
+		color: #848199;
+		@include font(400,24,14);
+	}
+	&__body {
+		padding-top: 70px;
+		width: 100%;
+
+		.swiper-button-prev::after,
+		.swiper-button-next::after {
+			font-size: 20px;
+		}
+		.swiper-button-next {
+			right: 40px !important;
+		}
+		.swiper-pagination-bullet {
+			bottom: 0;
+		 }
+		.swiper-pagination-bullet {
+			height: 8px;
+			width: 8px;
+			border-radius: 50%;
+			background : #C4C4C4;
+			line-height: 20px;
+			font-size: 14px;
+		}
+		.swiper-pagination-bullet-active {
+			background : $orange !important;
+		}
+		.swiper-pagination-fraction {
+			color: #C4C4C4;
+			font-size: 20px;
+		 }
+	}
+	&__cards {
+		@include display(flex,flex-start,center);
+		padding-bottom: 50px;
+		
+	} 
+	&__card {
+		width: 265px !important;
+		height: 265px !important;
+		z-index: 0;
+		margin-right: 32px;
+		position: relative;
+		background-color: $white;
+		padding: 55px 23px 63px 23px;
+		border-radius: 2*$borderRadius;
+		border: 1px dashed rgba(0, 0, 0, 0.12);
+
+		&:last-child {
+			margin-right: 0px;
+		}
+		&-img {
+			top: 0;
+			left: 50%;
+			z-index: 55;
+			position: absolute;
+			transform : translate(-50%,-50%);
+		}
+
+		&-body {
+			max-width : 219px;
+			text-align: center;
+			&-title {
+				@include font(500,20,14);
+				color: #3D3D3D;
+				span{
+					display: block;
+					color: #848199;
+					font-size: 11px;
+				}
+			}
+			&-icon {
+				padding-top: 8px;
+				@include display(flex,center,center);
+				span {
+					color: #000;
+					@include font(normal,14,14);
+				}
+				img {
+					width:15px;
+					height: 15px;
+					margin-left: 8px;
+				}
+			}
+			&-text {
+				padding-top: 8px;
+				color: #4D4D4D;
+				@include font(normal,24,14);
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
