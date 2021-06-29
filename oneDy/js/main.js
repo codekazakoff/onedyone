@@ -1,5 +1,5 @@
 new Swiper(".pricing__body", {
-//   loop: true,
+  //   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -24,6 +24,19 @@ new Swiper(".pricing__body", {
     sensitivity: 4,
   },
   slidesPerView: 4,
+});
+
+new Swiper(".blog__body", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  slidesPerView: 2,
 });
 
 $(function () {
