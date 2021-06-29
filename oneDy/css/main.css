@@ -735,12 +735,12 @@ img {
 }
 
 .pricing {
-  padding: 100px 0 0 0;
+  padding: 100px 0 70px 0;
 }
 .pricing__container {
   padding-left: 155px;
   max-width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .pricing__header {
   max-width: 555px;
@@ -854,6 +854,210 @@ img {
   font-weight: normal;
   line-height: 24px;
   font-size: 14px;
+}
+
+.subscription {
+  width: 100%;
+  padding-bottom: 25px;
+  margin-bottom: 45px;
+}
+.subscription__container {
+  max-width: 1074px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+.subscription__card-header {
+  max-width: 268px;
+  margin: 0 auto;
+}
+.subscription__card-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 32px;
+  color: #04004D;
+}
+.subscription__card-text {
+  color: #848199;
+  text-align: center;
+  padding: 12px 0px 38px 0px;
+  font-weight: normal;
+  line-height: 21px;
+  font-size: 14px;
+}
+.subscription__card-btn-group {
+  max-width: 220px;
+  margin: 0 auto;
+  border-radius: 6px;
+  border: 1px solid #e1e1e1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.subscription__card-btn-group-btn {
+  display: inline-block;
+  font-weight: normal;
+  line-height: 21px;
+  font-size: 14px;
+  color: #808080;
+  border-radius: 6px;
+  padding: 11px 31.55px 12px 31.65px;
+}
+.subscription__card-btn-group .btn-left {
+  color: #fff;
+  background: #FF5722;
+  border: 1px solid #FF5722;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+}
+.subscription__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+}
+.subscription__card {
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #FFB199;
+  padding: 24px 53px 25px 41px;
+  border-radius: 8px;
+  transition: all 400ms ease-in-out;
+}
+.subscription__card:hover {
+  transform: translateY(-40px);
+  transition: all 400ms ease-in-out;
+  background-color: #FF5722;
+}
+.subscription__card:hover .subscription__title, .subscription__card:hover .subscription__title span, .subscription__card:hover .subscription__text, .subscription__card:hover .subscription__must, .subscription__card:hover .subscription__line del, .subscription__card:hover .subscription__line span {
+  color: #fff;
+}
+.subscription__card:hover .subscription__line .image {
+  background: rgba(255, 255, 255, 0.2);
+}
+.subscription__card:hover .subscription__footer a {
+  background-color: #fff;
+  border-color: #fff;
+  color: #FF5722;
+}
+.subscription__header {
+  max-width: 232px;
+}
+.subscription__title {
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 16px;
+  color: #525252;
+}
+.subscription__title span {
+  color: #1f1f1f;
+  font-weight: 500;
+  line-height: 48px;
+  font-size: 32px;
+}
+.subscription__text {
+  padding: 8px 0px;
+  font-weight: normal;
+  line-height: 25px;
+  font-size: 18px;
+  color: #3D3D3D;
+}
+.subscription__must {
+  max-width: 238px;
+  color: #808080;
+  padding: 7px 0px 6px 0px;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px;
+}
+.subscription__line {
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.subscription__line .image {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscription__line .images {
+  background: rgba(255, 87, 34, 0.2);
+}
+.subscription__line span {
+  margin-left: 10px;
+  font-weight: normal;
+  line-height: 18px;
+  font-size: 12px;
+  color: #FF5722;
+}
+.subscription__line del {
+  color: #848199;
+  margin-left: 10px;
+  font-weight: normal;
+  line-height: 18px;
+  font-size: 12px;
+}
+.subscription__footer {
+  display: block;
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 5px;
+}
+.subscription__footer a {
+  padding: 11px 56px 12px 57px;
+  margin: 0 auto;
+  color: #FF5722;
+  border: 1px solid #FF5722;
+  border-radius: 4px;
+}
+
+.blog {
+  border: 1px solid red;
+  padding: 100px;
+}
+.blog__header {
+  max-width: 559px;
+  border: 1px solid green;
+}
+.blog__title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 32px;
+  color: #04004D;
+  letter-spacing: 4%;
+}
+.blog__text {
+  padding-top: 8px;
+  color: #848199;
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 14px;
+}
+.blog__body {
+  padding-top: 42px;
+  border: 1px solid cyan;
+}
+.blog__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 526px;
+  height: 209px;
+  border: 1px solid salmon;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,149 @@
+@import '_grid';
+@import '_virable';
+
+.subscription { 
+	// border: 1px solid crimson;
+	width: 100%;
+	padding-bottom: 25px;
+	margin-bottom: 45px;
+	&__container {
+		max-width:1074px;
+		margin: 0 auto;
+		padding: 0;
+		width: 100%;
+		// border: 1px solid;
+	}
+	&__card-header {
+		max-width:268px;
+		// border: 1px solid;
+		margin: 0 auto;
+	}
+	&__card-title {
+		font-family: 'Playfair Display',serif;
+		@include font(700,32,32);
+		color: $text-color;
+	}
+	&__card-text {
+		color : #848199;
+		text-align: center;
+		padding: 12px 0px 38px 0px;
+		@include font(normal,21,14);
+	}
+	&__card-btn-group {
+		max-width:220px;
+		margin: 0 auto;
+		border-radius: 6px;
+		border: 1px solid #e1e1e1;
+		@include display(flex,flex-end,center);
+		position : relative;
+
+		&-btn {
+			display: inline-block;
+			@include font(normal,21,14);
+			color: #808080;
+			border-radius: 6px;
+			padding: 11px 31.55px 12px 31.65px;
+		}
+		.btn-left {
+			color : $white ;
+			background : $orange ;
+			border: 1px solid $orange ;
+			// padding-bottom: 13px;
+			position : absolute;
+			top: -1px;
+			left:-1px;
+		}
+	}
+	&__cards {
+		@include display(flex,space-between,center);
+		padding-top: 100px;
+	}
+	&__card{
+		cursor: pointer;
+		background: $white;
+		border: 1px solid #FFB199;
+		padding: 24px 53px 25px 41px;
+		border-radius: 2 * $borderRadius;
+		transition : all 400ms ease-in-out;
+		&:hover{
+			transform : translateY(-40px);
+			transition : all 400ms ease-in-out;
+			background-color: $orange;
+
+		}
+	}
+	&__card:hover &__title, &__card:hover &__title span ,&__card:hover &__text, &__card:hover &__must, &__card:hover &__line del, &__card:hover &__line span{
+		color: $white;
+	}
+	&__card:hover &__line .image{
+		background: rgba(255, 255, 255, 0.2);
+	}
+	&__card:hover &__footer a{
+		background-color: $white;
+		border-color: $white;
+		color : $orange;
+	}
+	&__header{
+		max-width:232px;
+	}
+	&__title {
+		@include font(400,25,16);
+		color: #525252;
+		span {
+			color: #1f1f1f;
+			@include font(500,48,32);
+		}
+	}
+	&__text {
+		padding: 8px 0px;
+		@include font(
+			normal,25,18
+		);
+		color: #3D3D3D;
+	}
+	&__must {
+		max-width:238px;
+		color: #808080;
+		padding: 7px 0px 6px 0px;
+		@include font(400,24,14);
+	}
+
+	&__line {
+		padding-top: 15px;
+		@include display(flex,flex-start,center);
+
+		.image{
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: rgba(0, 0, 0, 0.1);
+			@include display(flex,center,center);
+		}
+		.images {
+			background: rgba(255, 87, 34, 0.2);
+		}
+		span {
+			margin-left: 10px;
+			@include font(normal,18,12);
+			color: $orange;
+		}
+		del {
+			color: #848199;
+			margin-left: 10px;
+			@include font(normal,18,12);
+		}
+	}
+	&__footer {
+		display : block;
+		text-align: center;
+		margin-top: 34px;
+		margin-bottom: 5px;
+		a {
+			padding: 11px 56px 12px 57px;
+			margin: 0 auto;
+			color : $orange;
+			border: 1px solid $orange;
+			border-radius: $borderRadius;
+		}
+	}
+}

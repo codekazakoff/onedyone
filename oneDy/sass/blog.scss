@@ -1,0 +1,35 @@
+@import '_grid';
+@import '_virable';
+.blog {
+	border: 1px solid red;
+	padding: 100px;
+
+	&__header { 
+		max-width:559px;
+		border: 1px solid green;
+	}
+	&__title {
+		font-family: 'Playfair Display',serif;
+		@include font(700,32,32);
+		color: $text-color;
+		letter-spacing: 4%;
+	}
+	&__text {
+		padding-top: 8px;
+		color: #848199;
+		@include font(normal,24,14);
+	}
+	&__body{
+		padding-top: 42px;
+		border: 1px solid cyan;
+	}
+	&__inner {
+		@include display(flex,space-between,center);
+	} 
+	&__card {
+		@include display(flex,space-between, center);
+		max-width:526px;
+		height: 209px;
+		border: 1px solid salmon;
+	}
+}
