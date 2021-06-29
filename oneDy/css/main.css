@@ -300,9 +300,9 @@ img {
     display: none !important;
   }
 }
-@media (max-width: 1201px) {
+@media (min-width: 993px) and (max-width: 1201px) {
   .header__home-inner {
-    align-items: center;
+    align-items: flex-start;
   }
   .header__home-content {
     max-width: 440px;
@@ -412,8 +412,8 @@ img {
     font-size: 34px;
   }
   .header__home-circle {
-    left: 27%;
-    width: 9%;
+    left: 22%;
+    width: 10%;
     height: 10%;
   }
   .header__home-circle img {
@@ -437,7 +437,7 @@ img {
     font-size: 10px;
   }
   .header__woman-img {
-    width: 90%;
+    width: 100%;
     float: right;
   }
   .header__woman-img img {
@@ -446,21 +446,24 @@ img {
   }
 }
 @media (min-width: 768px) and (max-width: 850px) {
+  .header__home-inner {
+    align-items: center;
+  }
   .header__home-title {
     font-weight: bold;
     line-height: 58px;
     font-size: 38px;
   }
   .header__home-circle {
-    left: 32%;
-    width: 9%;
+    left: 27%;
+    width: 10%;
     height: 10%;
   }
   .header__home-circle img {
     width: 86%;
   }
   .header__home-circle span {
-    width: 80%;
+    width: 82%;
     height: 82%;
     font-size: 8px;
   }
@@ -477,7 +480,7 @@ img {
     font-size: 10px;
   }
   .header__woman-img {
-    width: 90%;
+    width: 100%;
     float: right;
   }
   .header__woman-img img {
@@ -499,7 +502,7 @@ img {
 }
 @media screen and (max-width: 538px) {
   .header__home-rectangle {
-    max-width: 43%;
+    max-width: 43% !important;
   }
 }
 .company {

@@ -203,11 +203,11 @@
 	}
 }
 
-@media (max-width:1201px)  {
+@media (min-width:993px) and (max-width:1201px) {
 	.header {
 		&__home {
 			&-inner {
-				align-items: center ;
+				align-items: flex-start; ;
 			}
 			&-content {
 				max-width: 440px;
@@ -322,8 +322,8 @@
 				@include font(bold,52,34);
 			}
 			&-circle {
-				left: 27%;
-				width: 9%;
+				left: 22%;
+				width: 10%;
 				height: 10%;
 				img{
 					width:86%;
@@ -348,7 +348,7 @@
 			}
 		}
 		&__woman-img  {
-			width: 90%;
+			width: 100%;
 			float: right;
 		}
 		&__woman-img img{
@@ -361,18 +361,21 @@
 @media (min-width: 768px) and (max-width:850px) {
 	.header {
 		&__home {
+			&-inner {
+				align-items: center;
+			}
 			&-title {
 				@include font(bold,58,38);
 			}
 			&-circle {
-				left: 32%;
-				width: 9%;
+				left: 27%;
+				width: 10%;
 				height: 10%;
 				img{
 					width:86%;
 				}
 				span {
-					width: 80%;
+					width: 82%;
 					height: 82%;
 					font-size:8px;
 				}
@@ -391,7 +394,7 @@
 			}
 		}
 		&__woman-img  {
-			width: 90%;
+			width: 100%;
 			float: right;
 		}
 		&__woman-img img{
@@ -412,8 +415,6 @@
 					margin:  50px auto;
 				}
 			}
-
-
 			&__woman-img {
 				margin : 0 auto;
 			}
@@ -421,6 +422,6 @@
 }
 @media screen and (max-width:538px){
 	.header__home-rectangle{
-		max-width:43%;
+		max-width:43% !important;
 	}
 }
