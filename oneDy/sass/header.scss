@@ -112,7 +112,6 @@
 	&__home-inner {
 		padding-top: 88px;
 		@include display(flex,space-between,flex-start);
-		flex-wrap: wrap;
 	}
 	&__home-content {
 		max-width: 546px;
@@ -126,7 +125,6 @@
 			color: $orange;
 			font-family: "Playfair Display",serif;
 		}
-		font-size: calc(28px + (54px - 28px) * ((100vw-320px) / (768px - 320px)));
 	}
 	&__home-text {
 		padding: 20px 0px 0px 0px;
@@ -135,6 +133,7 @@
 	}
 	&__home-link {
 		padding-top: 28px;
+		padding-bottom: 30px;
 	}
 	&__home-btn{
 		margin-right: 25px;
@@ -154,9 +153,9 @@
 	&__home-circle {
 		position: absolute;
 		top: 38%;
-		left: 31px;
-		width: 62px;
-		height: 62px;
+		left: 5%;
+		width: 10%;
+		height: 10%;
 		border-radius: $borderRadius;
 		background-color: rgba(255, 255, 255, 0.9);
 		@include display(flex,center,center);
@@ -169,8 +168,8 @@
 		}
 
 		span {
-			width:48px;
-			height: 48px;
+			width:74%;
+			height: 74%;
 			color : $white;
 			border-radius: 50%;
 			background-color:#383E56;
@@ -180,8 +179,8 @@
 	}
 	&__home-rectangle {
 		top: 65%;
-		left: -75px;
-		max-width: 248px;
+		left: -14%;
+		max-width: 38%;
 		padding: 12px 11px;
 		position : absolute;
 		background-color:$white;
@@ -203,6 +202,51 @@
 		display: none !important;
 	}
 }
+
+@media (max-width:1201px)  {
+	.header {
+		&__home {
+			&-inner {
+				align-items: center ;
+			}
+			&-content {
+				max-width: 440px;
+			}
+			&-title {
+				@include font(bold,62,42);
+			}
+			&-circle {
+				left:25%;
+				width: 9%;
+				height: 11%;
+				img{
+					width:88%;
+				}
+				span {
+					width: 82%;
+					height: 82%;
+					font-size: 10px;
+				}
+			}
+			&-rectangle {
+				left:6%;
+				max-width: 40%;
+				padding:  6px;
+				span {
+					font-size: 10px;
+				}
+			}
+		}
+		&__woman-img  {
+			width: 80%;
+			float: right;
+		}
+		&__woman-img img{
+			width: 100%;
+		}
+	}
+}
+
 
 @media (max-width: 992px) {
 	.header {
@@ -262,13 +306,121 @@
 			border-color: $orange;
 			color: $orange;
 		}
-		&__home {
+	}
+}
 
+@media (min-width:851px) and (max-width: 992px){
+	.header {
+		&__home {
+			&-inner {
+				align-items: center;
+			}
+			&-content {
+				max-width: 360px;
+			}
+			&-title {
+				@include font(bold,52,34);
+			}
+			&-circle {
+				left: 27%;
+				width: 9%;
+				height: 10%;
+				img{
+					width:86%;
+				}
+				span {
+					width: 80%;
+					height: 81%;
+					font-size: 10px;
+				}
+			}
+			&-rectangle {
+				left: 8%;
+				max-width: 56%;
+				padding: 6px 2px;
+				img {
+					width: 12px;
+					height: 12px;
+				}
+				span {
+					font-size: 10px;
+				}
+			}
 		}
-		&__home-title {
-			font-size: calc(28px + (54px - 28px) * ((100vw-320px) / (768px - 320px)));
+		&__woman-img  {
+			width: 90%;
+			float: right;
+		}
+		&__woman-img img{
+			width: 100%;
+			margin-left: 47px;
 		}
 	}
 }
 
+@media (min-width: 768px) and (max-width:850px) {
+	.header {
+		&__home {
+			&-title {
+				@include font(bold,58,38);
+			}
+			&-circle {
+				left: 32%;
+				width: 9%;
+				height: 10%;
+				img{
+					width:86%;
+				}
+				span {
+					width: 80%;
+					height: 82%;
+					font-size:8px;
+				}
+			}
+			&-rectangle {
+				left: 8%;
+				max-width: 56%;
+				padding: 6px 2px;
+				img {
+					width: 12px;
+					height: 12px;
+				}
+				span {
+					font-size: 10px;
+				}
+			}
+		}
+		&__woman-img  {
+			width: 90%;
+			float: right;
+		}
+		&__woman-img img{
+			width: 100%;
+			margin-left: 47px;
+		}
+	}
+}
 
+@media (max-width:767px) {
+		.header {
+			&__home {
+				&-inner {
+					align-items: center ;
+					flex-wrap: wrap;
+				}
+				&-content {
+					margin:  50px auto;
+				}
+			}
+
+
+			&__woman-img {
+				margin : 0 auto;
+			}
+		}
+}
+@media screen and (max-width:538px){
+	.header__home-rectangle{
+		max-width:43%;
+	}
+}
