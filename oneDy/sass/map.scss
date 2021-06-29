@@ -1,0 +1,105 @@
+@import '_grid';
+@import '_virable';
+.map {
+	width: 100%;
+	&__container {
+			max-width:1060px;
+			max-height:668px;
+			margin : 0 auto;
+	}
+	&__header {
+		max-width:568px;
+		margin : 0 auto;
+		text-align: center;
+	}
+	&__title {
+		font-family: 'Playfair Display', serif;
+		@include font(700,32,32);
+		text-transform:capitalize;
+		color: $text-color;
+		text-align: center;
+	}
+	&__text {
+		padding : 0;
+		max-width:418px;
+		color : #848199;
+		text-align: center;
+		@include font(400,24,14);
+		margin: 8px auto 12px;
+		@include display(flex,center,center);
+	}
+	&__body {
+		padding: 30px 0 45px 0;
+		img {
+		width : 100%;		
+		}
+	}
+
+	.instructor {
+		margin: 100px 0;
+		&__container {
+			border-radius: $borderRadius;
+			height: 254px;
+			margin : 0 auto;
+			max-width: 1085px;
+			position: relative;
+			background-color: $text-color;
+			@include display(flex,center,center);
+		}
+		&__left,
+		&__right {
+			top: 0;
+			width:122px;
+			height: 100%;
+			position: absolute;
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+		}
+		&__left {
+			left: 10%;
+		}
+		&__right {
+			right: 10%;
+		}
+		&__middle{
+			max-width: 434px;
+		}
+		&__title {
+			color: $white;
+			text-align: center;
+			@include font(700,28,28);
+			font-family: 'Playfair Display',serif;
+		}
+		&__text {
+			padding: 12px 0px 12px 0px;
+			color : #ccc;
+			text-align: center;
+			@include font(normal,14,14);
+		}
+		&__btn {
+			flex-wrap: wrap;
+			padding-top: 12px;
+			@include display(flex,center,center);	
+			.btn{
+				width: 129px;
+				color: $white;
+				padding: 16px 20px;
+				text-align: center;
+				display: inline-block;
+				@include font(normal,14,14);
+			}
+		}
+		&__link {
+			margin-right: 20px;
+			background : $orange;
+			border: 1px solid $orange;
+			border-radius: $borderRadius;
+		}
+		&__outline-link {
+			color: $orange !important;
+			border-radius: 4px;
+			background : transparent;
+			border: 1px solid $orange;
+		}
+	}
+}
+

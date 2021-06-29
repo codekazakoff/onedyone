@@ -1,15 +1,14 @@
 @import '_grid';
 @import '_virable';
 .blog {
-	border: 1px solid red;
 	padding: 100px 0;
 
 	&__container {
-		margin-left: 115px;
+		max-width:1210px;
+		margin-left: auto;
 	}
 	&__header { 
 		max-width:559px;
-		border: 1px solid green;
 	}
 	&__title {
 		font-family: 'Playfair Display',serif;
@@ -24,7 +23,6 @@
 	}
 	&__body{
 		padding-top: 42px;
-		border: 1px solid cyan;
 	}
 	&__inner {
 		@include display(flex,space-between,center);
