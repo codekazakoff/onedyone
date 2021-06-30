@@ -550,13 +550,17 @@ img {
   }
 }
 @media (max-width: 449px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .header__home-content {
     max-width: 290px;
   }
   .header__home-title {
     font-weight: bold;
     line-height: 44px;
-    font-size: 22px;
+    font-size: 21px;
   }
   .header__home-text {
     font-size: 12px;
@@ -582,12 +586,12 @@ img {
   }
   .header__home-circle span {
     font-size: 8px;
-    width: 88%;
+    width: 86%;
     height: 88%;
   }
   .header__home-rectangle {
     left: -14%;
-    max-width: 69%;
+    max-width: 72%;
     padding: 4px 3px;
   }
   .header__home-rectangle img {
@@ -716,6 +720,23 @@ img {
   font-size: 14px;
 }
 
+@media (max-width: 992px) {
+  .company__inner {
+    flex-wrap: wrap;
+  }
+  .company__inner a {
+    margin: 30px auto 0;
+  }
+  .company__inner a img {
+    width: 100%;
+  }
+  .company__features-cards {
+    flex-wrap: wrap;
+  }
+  .company__features-card {
+    margin: 60px auto 0;
+  }
+}
 .class {
   padding-top: 42px;
 }

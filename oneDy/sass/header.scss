@@ -485,13 +485,16 @@
 }
 
 @media (max-width: 449px) {
+	body {
+		overflow-x: hidden;
+	}
 	.header { 
 		&__home {
 			&-content {
 				max-width: 290px;
 			}
 			&-title {
-				@include font(bold,44,22);
+				@include font(bold,44,21);
 			}
 			&-text {
 				font-size: 12px;
@@ -516,7 +519,7 @@
 				}
 				span {
 					font-size: 8px;
-					width : 88%;
+					width : 86%;
 					height: 88%;
 				}
 			}
@@ -526,7 +529,7 @@
 					height: 12px;
 				}
 				left: -14%;
-				max-width: 69%;
+				max-width: 72%;
 				padding: 4px 3px;
 				span {
 					font-size: 9px;
