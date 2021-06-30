@@ -445,7 +445,7 @@ img {
     margin-left: 47px;
   }
 }
-@media (min-width: 768px) and (max-width: 850px) {
+@media (min-width: 773px) and (max-width: 850px) {
   .header__home-inner {
     align-items: center;
   }
@@ -488,7 +488,7 @@ img {
     margin-left: 47px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 772px) {
   .header__home-inner {
     align-items: center;
     flex-wrap: wrap;
@@ -500,9 +500,102 @@ img {
     margin: 0 auto;
   }
 }
+@media (min-width: 626px) and (max-width: 772px) {
+  .header__home-circle img {
+    width: 90%;
+  }
+  .header__home-circle span {
+    width: 82%;
+    height: 82%;
+    font-size: 12px;
+  }
+  .header__home-rectangle {
+    left: -4%;
+    max-width: 45%;
+  }
+}
 @media screen and (max-width: 538px) {
   .header__home-rectangle {
-    max-width: 43% !important;
+    max-width: 43%;
+  }
+}
+@media (min-width: 450px) and (max-width: 625px) {
+  .header__home-content {
+    max-width: 400px;
+  }
+  .header__home-title {
+    font-weight: bold;
+    line-height: 54px;
+    font-size: 36px;
+  }
+  .header__home-circle img {
+    width: 91%;
+  }
+  .header__home-circle span {
+    font-size: 10px;
+    width: 88%;
+    height: 88%;
+  }
+  .header__home-rectangle {
+    left: -4%;
+    max-width: 45%;
+    padding: 6px 4px;
+  }
+  .header__home-rectangle img {
+    width: 12px;
+    height: 12px;
+  }
+  .header__home-rectangle span {
+    font-size: 9px;
+  }
+}
+@media (max-width: 449px) {
+  .header__home-content {
+    max-width: 290px;
+  }
+  .header__home-title {
+    font-weight: bold;
+    line-height: 44px;
+    font-size: 22px;
+  }
+  .header__home-text {
+    font-size: 12px;
+  }
+  .header__home-link {
+    text-align: center;
+  }
+  .header__home-link a {
+    padding: 12px 24px;
+  }
+  .header__home-link a:first-child {
+    margin-right: 0;
+  }
+  .header__home-link a:last-child {
+    margin-top: 10px;
+  }
+  .header__home-circle {
+    height: 11%;
+    width: 12%;
+  }
+  .header__home-circle img {
+    width: 89%;
+  }
+  .header__home-circle span {
+    font-size: 8px;
+    width: 88%;
+    height: 88%;
+  }
+  .header__home-rectangle {
+    left: -14%;
+    max-width: 69%;
+    padding: 4px 3px;
+  }
+  .header__home-rectangle img {
+    width: 12px;
+    height: 12px;
+  }
+  .header__home-rectangle span {
+    font-size: 9px;
   }
 }
 .company {
