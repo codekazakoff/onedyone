@@ -1,0 +1,540 @@
+@import '_virable';
+@import '_grid';
+.container {
+	max-width: 1150px;
+	padding: 0 20px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+
+.header {	
+	width: 100%;
+	background : $background;
+	&__nav {
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 555;
+		min-height: 100px;
+		background : $background;
+		@include display(flex,center,center);
+	}
+	&__inner {
+		@include display(flex,space-between,center);
+	}
+
+	&__logo {
+		width: 15%;
+		@include display(flex,flex-start,center);
+	}	
+
+	&__bars, &__times {
+		cursor: pointer;
+		display : none;
+	}
+
+	&__content {
+		width : 85%;
+		margin-left: 50px;
+		@include display(flex,space-between,center);
+	}
+
+	&__menu {
+		@include display(flex,center,center);
+	}
+
+	&__item {
+		margin: 0 25px;
+
+		&:first-child {
+			margin-left:0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+
+	}
+
+	&__link {
+		color: $text-color;
+		position: relative;
+		@include font(500,16,16);
+
+		&::before {
+			@include before;
+		 }
+		 &::after {
+			@include after;
+		 }
+		 &:hover {
+			font-weight: 510;
+			&::before {
+			  opacity: 1;
+			  transform: translateY(-38px);
+			}
+			&::after {
+			  bottom: -12px;
+			  opacity: 1;
+			}
+		 }
+	}
+
+	&__auth {
+		@include display(flex,space-between,center);
+	}
+	&__btn{
+		color: $orange;
+		padding : 15px 32px;
+		display: inline-block;
+		border : 1px solid $orange;
+		border-radius: $borderRadius;
+		@include font(normal,16,16);
+	}	
+	&__btn.btn-link {
+		width: 131.58px;
+		text-align: center;
+		color: $text-color;
+		margin-right: 5px;
+		border-color: transparent;
+
+		&:hover {
+			color: $orange;
+			border-color: $orange;
+			transition : $transition;
+		}
+	}
+	&__home {
+		max-width: 1352px;
+		margin : 0 auto;
+		padding: 0 47px 0 41px;
+	}	
+	&__home-inner {
+		padding-top: 88px;
+		@include display(flex,space-between,flex-start);
+	}
+	&__home-content {
+		max-width: 546px;
+		margin-top: 42px;
+	}
+	&__home-title {
+		color: $text-color;
+		font-family: "Playfair Display",serif;
+		@include font(bold,74,54);
+		span {
+			color: $orange;
+			font-family: "Playfair Display",serif;
+		}
+	}
+	&__home-text {
+		padding: 20px 0px 0px 0px;
+		color: rgba(1, 0, 26, 0.75);
+		@include font(normal,24,14);
+	}
+	&__home-link {
+		padding-top: 28px;
+		padding-bottom: 30px;
+	}
+	&__home-btn{
+		margin-right: 25px;
+		color: $white;
+		background: $orange;
+	}
+	&__home-img {
+		position: relative;
+		max-width: 622px;
+	}
+	&__woman-img  {
+		width: 100%;
+	}
+	&__woman-img img{
+		width: 100%;
+	}
+	&__home-circle {
+		position: absolute;
+		top: 38%;
+		left: 5%;
+		width: 10%;
+		height: 10%;
+		border-radius: $borderRadius;
+		background-color: rgba(255, 255, 255, 0.9);
+		@include display(flex,center,center);
+
+		img{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		span {
+			width:74%;
+			height: 74%;
+			color : $white;
+			border-radius: 50%;
+			background-color:#383E56;
+			@include font(normal,14,13);
+			@include display(flex,center,center);
+		}
+	}
+	&__home-rectangle {
+		top: 65%;
+		left: -14%;
+		max-width: 38%;
+		padding: 12px 11px;
+		position : absolute;
+		background-color:$white;
+		border-radius: $borderRadius;
+		@include display(flex,center,center);
+		img{
+			width: 16px;
+			height : 16px;
+		}
+		span {
+			@include font(normal,14,13);
+			margin-left: 5px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.header__times, .header__bars {
+		display: none !important;
+	}
+}
+
+@media (min-width:993px) and (max-width:1201px) {
+	.header {
+		&__home {
+			&-inner {
+				align-items: flex-start; ;
+			}
+			&-content {
+				max-width: 440px;
+			}
+			&-title {
+				@include font(bold,62,42);
+			}
+			&-circle {
+				left:25%;
+				width: 9%;
+				height: 11%;
+				img{
+					width:88%;
+				}
+				span {
+					width: 82%;
+					height: 82%;
+					font-size: 10px;
+				}
+			}
+			&-rectangle {
+				left:6%;
+				max-width: 40%;
+				padding:  6px;
+				span {
+					font-size: 10px;
+				}
+			}
+		}
+		&__woman-img  {
+			width: 80%;
+			float: right;
+		}
+		&__woman-img img{
+			width: 100%;
+		}
+	}
+}
+
+
+@media (max-width: 992px) {
+	.header {
+		background : $background;
+		&__nav {
+			z-index: 5;
+			width : 100%;
+			position : fixed;
+		}
+		&__bars {
+			display: inline-block;
+		}
+		&__content {
+			left: 0;
+			top: 0;
+			width: 100%;
+			z-index: -1;
+			margin-left: 0px;
+			padding-top: 100px;
+			position: absolute;
+			flex-direction: column;
+			background : $background;
+			transform: translateY(-100%);
+			transition : all 400ms ease-in-out;
+		}
+		&__content.active {
+			transform: translateY(0);
+			transition : all 400ms ease-in-out;
+		}
+		&__menu {
+			flex-direction: column;
+			width: 100%;
+		}
+		&__item {
+			margin : 20px 0;
+			width: 100%;
+			@include display(flex, center, center);
+		}
+		&__link {
+			&:hover {
+				&::before{
+					transform: translateY(-15px) ;
+					transition: all 300ms ease-in-out;
+				}
+				&::after {
+					bottom : -15px !important;
+					transition: all 300ms ease-in-out;
+				}
+			}
+		}
+		&__auth {
+			flex-direction: column;
+			padding-bottom: 20px;
+		}
+		&__btn.btn-link {
+			margin: 15px 0;
+			border-color: $orange;
+			color: $orange;
+		}
+	}
+}
+
+@media (min-width:851px) and (max-width: 992px){
+	.header {
+		&__home {
+			&-inner {
+				align-items: center;
+			}
+			&-content {
+				max-width: 360px;
+			}
+			&-title {
+				@include font(bold,52,34);
+			}
+			&-circle {
+				left: 22%;
+				width: 10%;
+				height: 10%;
+				img{
+					width:86%;
+				}
+				span {
+					width: 80%;
+					height: 81%;
+					font-size: 10px;
+				}
+			}
+			&-rectangle {
+				left: 8%;
+				max-width: 56%;
+				padding: 6px 2px;
+				img {
+					width: 12px;
+					height: 12px;
+				}
+				span {
+					font-size: 10px;
+				}
+			}
+		}
+		&__woman-img  {
+			width: 100%;
+			float: right;
+		}
+		&__woman-img img{
+			width: 100%;
+			margin-left: 47px;
+		}
+	}
+}
+
+@media (min-width: 773px) and (max-width:850px) {
+	.header {
+		&__home {
+			&-inner {
+				align-items: center;
+			}
+			&-title {
+				@include font(bold,58,38);
+			}
+			&-circle {
+				left: 27%;
+				width: 10%;
+				height: 10%;
+				img{
+					width:86%;
+				}
+				span {
+					width: 82%;
+					height: 82%;
+					font-size:8px;
+				}
+			}
+			&-rectangle {
+				left: 8%;
+				max-width: 56%;
+				padding: 6px 2px;
+				img {
+					width: 12px;
+					height: 12px;
+				}
+				span {
+					font-size: 10px;
+				}
+			}
+		}
+		&__woman-img  {
+			width: 100%;
+			float: right;
+		}
+		&__woman-img img{
+			width: 100%;
+			margin-left: 47px;
+		}
+	}
+}
+
+@media  (max-width:772px) {
+		.header {
+			&__home {
+				&-inner {
+					align-items: center ;
+					flex-wrap: wrap;
+				}
+				&-content {
+					margin:  50px auto;
+				}
+			}
+			&__woman-img {
+				margin : 0 auto;
+			}
+		}
+}
+
+@media (min-width:626px) and (max-width:772px) {
+	.header {
+		&__home {
+			&-circle {
+				img {
+					width : 90%;
+				}
+				span {
+					width: 82%;
+					height: 82%;
+					font-size:12px;
+				}
+			}
+			&-rectangle {
+				left: -4%;
+				max-width: 45%;
+				}
+			
+		}
+	}
+}
+
+@media screen and (max-width:538px){
+	.header__home-rectangle{
+		max-width:43%;
+	}
+}
+
+@media (min-width:450px) and (max-width:625px) {
+	.header {
+		&__home {
+			&-content {
+				max-width: 400px;
+			}
+			&-title {
+				@include font(bold,54,36);
+			}
+			&-circle {
+				img {
+					width : 91%;
+				}
+				span {
+					font-size: 10px;
+					width : 88%;
+					height: 88%;
+				}
+			}
+			&-rectangle {
+				img {
+					width: 12px;
+					height: 12px;
+				}
+				left: -4%;
+				max-width: 45%;
+				padding: 6px 4px;
+				span {
+					font-size: 9px;
+				}
+				}
+		}
+	}
+}
+
+@media (max-width: 449px) {
+	body {
+		overflow-x: hidden;
+	}
+	.header { 
+		&__home {
+			&-content {
+				max-width: 290px;
+			}
+			&-title {
+				@include font(bold,44,21);
+			}
+			&-text {
+				font-size: 12px;
+			}
+			&-link {
+				text-align: center;
+				a{
+					padding : 12px 24px ;
+					&:first-child {
+						margin-right: 0;
+					}
+					&:last-child {
+						margin-top: 10px;
+					}
+				}
+			}
+			&-circle {
+				height: 11%;
+				width: 12%;
+				img {
+					width : 89%;
+				}
+				span {
+					font-size: 8px;
+					width : 86%;
+					height: 88%;
+				}
+			}
+			&-rectangle {
+				img {
+					width: 12px;
+					height: 12px;
+				}
+				left: -14%;
+				max-width: 72%;
+				padding: 4px 3px;
+				span {
+					font-size: 9px;
+				}
+				}
+		}
+	}
+}

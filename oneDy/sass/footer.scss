@@ -1,0 +1,117 @@
+@import '_grid';
+@import '_virable';
+.footer {
+	width: 100%;
+	min-height: 368px;
+	background : $background;
+
+	&__wrapper {
+		padding-top: 30px;
+		@include display(flex,flex-start,flex-start);
+	
+	}
+	&__inner {
+		max-width:340px;
+
+		&-title {
+			color: #666666;
+			padding: 8px 0px 18px 0px;
+			@include font(normal,24,14);
+			span {
+				color: #000;
+				margin-right: 5px;
+				font-size: 18px;
+			}
+		}
+		&-location {
+			@include display(flex,flex-start,flex-start);
+
+			span{
+				color: #666;
+				max-width: 256px;
+				margin-top: -5px;
+				margin-left: 14px;
+				@include font(normal,24,14);
+			}
+		}
+		&-email {
+			margin-top: 27px;
+			@include display(flex,flex-start,flex-start);
+			span {
+				color: #666;
+				margin-left: 13px;
+				@include font(normal,24,14);
+				margin-top: -5px;
+			}
+		}
+	}
+	&__content {
+		margin-left: 103px;
+		@include display(flex,space-between,flex-start);
+		&-one {
+			margin-right: 80px;
+			h2 {
+				@include font(500,16,16);
+			}
+			a{
+				color : #666;
+				display: block;
+				padding-top: 24px;
+				@include font(normal,14,14);
+			}
+		}
+		&-two {
+			margin-right: 80px;
+			h2 {
+				@include font(500,16,16);
+			}
+			a{
+				color : #666;
+				width : 100px;
+				display: block;
+				padding-top: 24px;
+				@include font(normal,14,14);
+			}
+		}
+		&-three {
+			margin-right: 80px;	
+			h2 {
+				@include font(500,16,16);
+			}
+			a{
+				color : #666;
+				display: block;
+				padding-top: 24px;
+				@include font(normal,14,14);
+			}
+		}
+
+
+		&-four {
+			h2 {
+				@include font(500,16,16);
+			}
+			a{
+				color : #666;
+				display: block;
+				min-width:160px;
+				padding-top: 24px;
+				@include font(normal,14,14);
+			}
+		}
+	}
+	&__footer {
+		@include display(flex,space-between,center);
+	}
+	&__first , &__second, &__three{
+		@include display(flex,center,center);
+		padding-top: 35px;
+		@include font(normal,14,14);
+		color: #666666;
+	}
+}
+.footer__line{
+	opacity: 0.1;
+	padding-top: 54px;
+	border-bottom: 1px solid #000;
+}

@@ -1,0 +1,135 @@
+@import '_grid';
+@import '_virable';
+.company { 
+	background: #FDFDFD;
+
+	&__logos {
+		min-height : 160px;
+		@include display(flex,center,center);
+	}
+	&__inner {
+		margin-left: 19px;
+		margin-right: 20px;
+		// flex-wrap: wrap;
+		@include display(flex,space-between,center);
+	}
+	&__features {
+		padding: 100px 0px;
+
+		&-body {
+			max-width:948px;
+			margin: 0 auto;
+		}
+		&-inner{
+			margin: 0 auto;
+			display: block;
+			max-width: 428px;
+			padding-bottom: 42px;
+		}
+		&-title {
+			color: $text-color;
+			text-align: center;
+			@include font(700,32,32);
+			font-family: "Playfair Display",serif;
+		}
+		&-text {
+			color: #848199;
+			padding-top: 10px;
+			text-align: center;
+			@include font(400,26,14);
+		}
+		&-content {
+			padding-top: 90px;
+		}
+		&-cards {
+			@include display(flex,space-between,center);
+			flex : wrap;
+		}
+		&-card {
+			cursor: pointer;
+			max-width:300px;
+			min-height: 300px;
+			text-align: center;
+			background-color: #fff;
+			padding: 28px 52px 0px 52px;
+			border-radius: 2*$borderRadius;
+			transition : all 600ms ease-in-out;
+			border: 1px solid rgba(0, 0, 0, 0.1);		
+			&:hover {
+				background-color: $orange;
+				transform: translateY(-48px);
+				transition : all 400ms ease-in-out;
+
+				.company__features-card-body .company__features-card-title , 
+				.company__features-card-body .company__features-card-text{
+					color: $white;
+				}
+				.company__features-card-img .mask__group {
+					top: 0;
+					left:-120px;
+					z-index: 8888888;
+				}
+			}	
+
+
+			&-img{
+				height: 57px;
+				width: 57px;
+				margin: 0 auto;
+				position: relative;
+				border-radius: 50%;
+				background: $orange;
+				border: 6px solid #f5f5f5;
+				opacity: 0.9;
+				z-index: 0;
+				@include display(flex,center,center);
+				.mask__group {
+					position: absolute;
+					z-index: 0;
+				}
+			}
+			&-body {
+				padding: 24px 0px 67px 0;
+			}
+			&-title {
+				@include font(600,14,16);
+				z-index: 999;
+				color: #262626;
+			}
+			&-text {
+				z-index: 999;
+				color: #4D4D4D;
+				max-width:196px;
+				padding-top: 14px;
+				text-align: center;
+				@include font(normal,24,14);
+			}
+		}
+	}
+
+
+
+}
+
+@media (max-width: 992px) {
+	.company {
+		&__inner {
+			flex-wrap: wrap;
+			a {
+				margin : 30px auto 0;
+				img {
+					width: 100%;
+				}
+			}
+		}
+		&__features-cards {
+			flex-wrap: wrap;
+		}
+		&__features-card {
+			margin: 60px auto 0;
+			&:last-child {
+				// margin-top: 60px;
+			}
+		}
+	}
+}

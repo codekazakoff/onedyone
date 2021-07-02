@@ -1,0 +1,78 @@
+@import '_grid';
+@import '_virable';
+.blog {
+	padding: 100px 0;
+
+	&__container {
+		max-width:1210px;
+		margin-left: auto;
+	}
+	&__header { 
+		max-width:559px;
+	}
+	&__title {
+		font-family: 'Playfair Display',serif;
+		@include font(700,32,32);
+		color: $text-color;
+		letter-spacing: 4%;
+	}
+	&__text {
+		padding-top: 8px;
+		color: #848199;
+		@include font(normal,24,14);
+	}
+	&__body{
+		padding-top: 42px;
+	}
+	&__inner {
+		@include display(flex,space-between,center);
+	} 
+	&__card {
+		height: 209px;
+		cursor: pointer;
+		max-width:526px;
+		margin-right: 22px;
+		border-radius: 2 * $borderRadius;
+		border: 0.912662px solid rgba(0, 0, 0, 0.1);		
+		@include display(flex,space-between, flex-start);
+	}
+	&__right {
+		padding: 16px 16px 22px 12px;
+	}
+	&__line-1 {
+		@include display(flex,space-between,center);
+		span {
+			color: #808080;
+			@include font(500,12.7,13);
+		}
+	}
+	&__line-2 {
+		@include font(600,27,16.4);
+		padding: 11px 0px 7.93px 0px;
+		color: #3D3D3D;
+	}
+	&__line-3 {
+		@include font(normal,20,11);
+		color: #4D4D4D;
+	}
+	&__line-4 {
+		@include display(flex,space-between,center);
+		padding-top: 15px;
+
+		&-left {
+			@include display(flex,space-between,center);
+			span {
+				color: #999999;
+				margin-left: 8px;
+				@include font(normal,13,11.8);
+			}
+		}
+		&-right {
+			a {
+				display: inline-block;
+				color: $orange;
+				@include font(500,19,12.7);
+			}
+		}
+	}
+}

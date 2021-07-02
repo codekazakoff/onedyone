@@ -1,0 +1,74 @@
+@import '_grid';
+@import '_virable';
+
+
+.about {
+	&__wrapper {
+		padding: 85px 160px 37px 89px;
+		margin : 0 auto;
+	}
+	&__header{
+		max-width:330px;
+		margin: 0 auto;
+	}
+	&__title {
+		text-align: center;
+		@include font(700,32,32);
+		color: $text-color;
+		font-family: 'Playfair Display',serif;
+	}
+	&__text {
+		color: #848199;
+		text-align: center;
+		padding: 12px 0px 28px 0px;
+		@include font(400,14,14);
+	}
+	&__body {
+		margin-bottom: 33px;
+		@include display(flex,center,flex-start);
+
+		&-left{
+			position: relative;
+
+			&::before {
+				content: "";
+				width: 18px;
+				height: 18px;
+				border-radius: 50%;
+				background : $orange;
+			}
+
+			iframe{
+				min-width:529px;
+				min-height: 309px;
+				margin-left: 46px;
+			}
+		}
+		&-right{
+			padding-top: 39px;
+			padding-left: 34px;
+
+			&-header {
+				@include font(600,32,24);
+				color: #1f1f1f;
+			}
+			&-body {
+				padding-top: 16px;
+				padding-bottom: 32px;
+				@include font(normal,28,14);
+				color: rgba(1, 0, 26, 0.75);
+			}
+			&-footer a{
+				color : $orange;
+				display : inline-block;
+				@include font(normal,16,14);
+				border-bottom: 1px solid $orange;
+
+				&::after {
+					margin-left: 5px;
+					content: url('../assets/img/right.svg');
+				}
+			}
+		}
+	}
+}
